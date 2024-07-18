@@ -2,6 +2,11 @@
   position: fixed;
   bottom: 20px;
   left: 20px;
+  transition: all 250ms;
+}
+
+.whatsapp:hover {
+  transform: scale(1.05);
 }
 
 .modal {
@@ -9,15 +14,17 @@
   position: fixed;
   height: 100%;
   width: 100%;
+  font-size:1rem;
 }
 
 .modal-div {
-  max-width: 200px;
+  width: 280px;
   padding: 12px;
   position: fixed;
   bottom: 100px;
   left: 20px;
-  background-color: #ffffff;
+  background:#FFFFFF;
+  color:#000000;
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
   border-radius: 8px;
 }
@@ -26,4 +33,109 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  margin-bottom:12px;
+}
+
+{/*Modal*/}
+.MessageContainer {
+  height: 250px;
+}
+
+.Messages {
+  padding:8px;
+}
+
+.sent {
+  flex-direction: row-reverse;
+  width:180px;
+  margin-left:auto;
+}
+
+.sent p {
+  background: #22ad86;
+  color:#FFFFFF;
+  text-align:left;
+  padding: 10px;
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.received {
+  width:180px;
+}
+
+.received p {
+  background: linear-gradient(to top, #22ad86, #71bf52);
+  color:#FFFFFF;
+  text-align:left;
+  padding: 10px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.sendmsg {
+  display:flex;
+  justify-content:space-between;
+}
+
+.sendmsg input {
+  height: 30px;
+  width:180px;
+  padding-left:8px;
+  margin-top:12px;
+  margin-bottom:12px;
+  background:transparent;
+  border:none;
+	border-bottom: 1px solid #949494;
+	transition: all 150ms;
+	outline: none;
+	color: #000000;
+  font-weight:400;
+  font-size:1rem;
+  font-family: "Montserrat", sans-serif;
+  opacity:0.9;
+}
+
+.sendmsg:input:hover {
+    opacity: 1;
+}
+
+.sendmsg input::placeholder {
+    color: #000000;
+    opacity: 0.9;
+}
+  
+.sendmsg input::-ms-input-placeholder {
+    color: #000000;
+    opacity: 0.9;
+}
+
+.sendbtn {
+  background: transparent linear-gradient(180deg, #71BF52 0%, #22AD86 100%) 0% 0% no-repeat padding-box;
+  color:#FFFFFF;
+  opacity: 1;
+  border-radius:50%;
+  border: 1px solid #FFFFFF;
+  width:44px;
+  height:44px;
+  padding:4px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transform: rotate(-35deg);
+  margin:8px;
+  cursor:pointer;
+}
+
+{/*Font of large screen*/}
+@media screen and (min-width: 2000px) {
+  .modal {
+    font-size:120%;
+  }
+
+  .sendmsg input {
+    font-size:120%;
+  }
 }
