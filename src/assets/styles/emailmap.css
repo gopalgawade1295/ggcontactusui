@@ -1,0 +1,183 @@
+{/*Email & Map*/}
+.container {
+    padding-left:120px;
+    padding-right:120px;
+    padding-top:50px;
+    padding-bottom:50px;
+    background:#121614;
+    color:#FFFFFF;
+    min-height:100%;
+    letter-spacing:0px;
+    font-size:1.25rem;
+    font-weight:400;
+}
+
+{/*Container 1*/}
+.flexbox1 {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap: wrap;
+}
+    
+.box1 {
+    max-width:584px;
+    text-align:left;
+    font-weight:500;
+    font-size:2rem;
+}
+
+.box2 {
+    max-width:584px;
+    margin-top:12px;
+    margin-bottom:12px;
+    text-align:left;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    font-size:1rem;
+    font-weight:200;
+}
+
+.box2 img {
+    margin:8px;
+    height:52px;
+    width:52px;
+    cursor:pointer;
+    transform: translateY(0px);
+    transition: transform 150ms;
+}
+
+.box2 img:hover {
+    transform: translateY(-2px);
+}
+
+{/*Container 2*/}
+.flexbox2 {
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    font-weight: 300;
+    line-height:1.6;
+}
+
+.box3 {
+    width:55%;
+    text-align:left;
+}
+
+.box3_1 {
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-wrap:wrap;
+}
+
+.box3_1 div {
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    text-align:left;
+    width:334.5px;
+    transition:transform 150px;
+}
+
+.box3_1 div:hover {
+    transform:translateY(-2px);
+}
+
+.box3_1 img {
+    height:44px;
+    weight:44px;
+    margin:8px;
+}
+
+.box3_1  p {
+    margin-top:10px;
+    letter-spacing:0px;
+}
+
+.box3_1 div p span{
+    text-decoration: underline;
+    text-decoration-thickness: 0.15px;
+}
+
+hr {
+    width: 349px;
+    margin: 0px;
+    border: 1px solid #FFFFFF;
+    opacity: 0.5;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.box4 {
+    height:480px;
+    width:40%;
+    /*
+    background-image: url('../images/Group 1662.png');
+    background-size: contain;
+    background-size: 100% 100%;*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid #71BF52;
+    padding:12px;
+    box-shadow: inset 0 0 10px #71BF52, 0 0 10px #71BF52;
+}
+
+iframe {
+    height:100%;
+    width:100%;
+}
+
+@media screen and (max-width:1480px){
+    .container {
+        padding-left:24px;
+        padding-right:24px;
+    }
+
+    .box3_1 div {
+        width:280px;
+    }
+}
+
+@media screen and (max-width:1080px){
+    .box3 {
+        width:100%
+    }
+
+    .box3_1 div {
+        width:45%
+    }
+
+    .box4 {
+        width:100%
+    }
+}
+
+@media screen and (max-width:580px){
+    .box3_1 div {
+        width:100%
+    }
+
+    hr {
+        width: 100%;
+    }
+}
+
+{/*Font of large screen*/}
+@media screen and (min-width:2000px){
+    .container {
+        font-size:150%;
+    }
+
+    .box1 {
+        font-size:150%;
+    }
+
+    .box2 {
+        font-size:100%;
+    }
+}

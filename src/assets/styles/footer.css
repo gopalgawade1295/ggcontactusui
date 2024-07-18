@@ -1,0 +1,128 @@
+{/*Footer*/}
+.footer-div {
+    padding:120px;
+    padding-top:70px;
+    background-color: #121614;
+    background: radial-gradient(farthest-side at 900px 700px, #195335, #121614, #121614);
+    color:#FFFFFF;
+    letter-spacing:0px;
+    font-size:1.25rem;
+    font-weight:400;
+    line-height: 1.6;
+}
+
+footer {
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+footer div {
+    width: 30%;
+    text-align: left;
+}
+
+{/*Information*/}
+.info {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    min-height:300px;
+}
+
+{/*More Information*/}
+.moreinfo p {
+    color:#22AD86;
+    font-weight:600;
+}
+
+.moreinfo ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+
+.moreinfo li {
+    padding-bottom: 16px;
+    transition: transform 150ms;
+    cursor:pointer;
+}
+
+.moreinfo li:hover {
+    transform:translateY(-2px);
+}
+
+
+{/*Social*/}
+.socialinfo p {
+    color:#22AD86;
+    font-weight:600;
+}
+
+.socialicon-div {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-wrap:no-wrap;
+}
+
+.socialicon {
+    margin-right:24px;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+}
+
+.socialicon:hover {
+    transform: translateY(-2px);
+    transition-duration: 500ms;
+    opacity: 0.5;
+}
+
+.footer-div hr {
+    width:100%;
+}
+
+@media screen and (max-width:1480px){
+    .footer-div {
+        padding-left:24px;
+        padding-right:24px;
+        padding-bottom:30px;
+    }
+}
+
+@media screen and (max-width:980px){
+    footer div {
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        width: 100%;
+        gap:0px;
+    }
+
+    .info {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        min-height:100%;
+    }
+
+    .socialicon-div {
+        max-width:400px;
+        margin:auto;
+    }
+
+    .socialicon {
+        margin-right:8px;
+        margin-left:8px;
+    }
+}
+
+{/*Font of large screen*/}
+@media screen and (min-width:2000px){
+    .footer-div {
+        font-size:150%
+    }
+}

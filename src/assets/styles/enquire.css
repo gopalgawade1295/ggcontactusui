@@ -1,0 +1,171 @@
+{/*Enquire*/}
+.containereq {
+    padding:120px;
+    padding-top:50px;
+    background-color:#1a2e24;
+    background-image: url('../images/film_texture___grain_explosion_by_stephanepellennec_d37pwfa-fullview.png');
+    background-position:center;
+    background-size:cover;
+    color:#FFFFFF;
+    letter-spacing:0px;
+    font-size:1.25rem;
+    font-weight:400;
+    line-height: 1.6;
+    min-height:100%;
+}
+
+
+.title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size:3.75rem;
+    padding-bottom:20px;
+}
+
+{/*Enquire div 1*/}
+.flexbox1eq {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+input {
+	height: 40px;
+    width:300px;
+    padding-left:8px;
+    margin-top:12px;
+    margin-bottom:12px;
+    background:transparent;
+    border:none;
+	border-bottom: 1px solid #949494;
+	transition: all 150ms;
+	outline: none;
+	color: #FFFFFF;
+    font-weight:400;
+    font-size:1.25rem;
+    font-family: "Montserrat", sans-serif;
+    opacity:0.9;
+}
+
+input:hover {
+    opacity: 1;
+}
+
+::placeholder {
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+  
+::-ms-input-placeholder {
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+{/*Enquire div 2*/}
+.flexbox2eq {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.flexbox2eq div:first-child{
+    width:80%;
+    display:flex;
+    justify-content:flex-start;
+}
+
+.flexbox2eq div {
+    width:10%;
+    height:100%;
+}
+
+.flexbox2eq div input{
+    width:95%;
+}
+
+.submit {
+    padding-top:12px;
+    background:transparent;
+    border:none;
+    font-size:24px;
+    color:#FFFFFF;
+    opacity:1;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    cursor:pointer;
+}
+
+.submit div {
+    background: transparent linear-gradient(180deg, #71BF52 0%, #22AD86 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius:50%;
+    width:44px;
+    height:44px;
+    padding:4px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transform: rotate(-35deg);
+    margin:8px;
+}
+
+.submit span {
+    font-size: 1.25rem;
+    font-weight:600;
+}
+
+.submit:hover {
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width:1480px){
+    .containereq {
+        padding-left:24px;
+        padding-right:24px;
+    }
+}
+
+@media screen and (max-width:999px){
+    .flexbox1eq div {
+        width:100%;
+    }
+
+    .flexbox2eq div:first-child {
+        width:100%;
+    }
+
+    input {
+        width:95%;
+    }
+
+    .submit {
+        margin:auto;
+    }
+
+    .flexbox2eq div:first-child{
+        justify-content:center;
+    }
+}
+
+{/*Font of large screen*/}
+@media screen and (min-width:2000px){
+    .submit span {
+        font-size: 100%;
+    }
+}
+
+{/*Font of large screen*/}
+@media screen and (min-width:2000px){
+
+    .submit span {
+        font-size: 100%;
+    }
+
+    .title {
+        font-size:300%;
+    }
+}

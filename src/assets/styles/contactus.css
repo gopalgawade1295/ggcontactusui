@@ -1,0 +1,61 @@
+{/*Contact Us*/}
+.contactus {
+    height: 500px;
+    background-image: url("../images/Group 1692.png");
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.contactus h1 {
+    font-size: 4.938rem;
+    font-family: "Bebas Neue", sans-serif;
+    background: linear-gradient(to top, #22ad86, #71bf52);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+  
+.contact {
+    position: absolute;
+    font-size: 22px;
+    top: 130px;
+    left: 130px;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+}
+  
+.contact img {
+    height: 19px;
+    width: 21px;
+    margin-right: 8px;
+}
+  
+@media screen and (max-width: 1480px) {
+    .contactus {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  
+    .contact {
+      top: 60px;
+      left: 24px;
+    }
+}
+  
+{/*Font of large screen*/}
+@media screen and (min-width: 2000px) {
+    .contactus h1 {
+      font-size: 800%;
+    }
+  
+    .contact {
+      font-size: 150%;
+    }
+}
